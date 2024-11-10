@@ -55,11 +55,9 @@ function LoginForm() {
     if (isSignUp) {
       // Handle sign up logic here
       console.log("Sign Up data:", formData);
-      // If you want to handle actual sign up, you can call an API here
     } else {
       // Handle login logic here
       console.log("Login data:", formData);
-      // If you want to handle actual login, you can call an API here
     }
   };
 
@@ -74,7 +72,7 @@ function LoginForm() {
     >
       <div
         className="form-card bg-white rounded-lg shadow-lg overflow-hidden w-full max-w-4xl flex flex-col md:flex-row"
-        style={{ maxHeight: "100vh" }}
+        style={{ maxHeight: "100vh", overflowY: "auto" }} // Enable scrolling
       >
         {/* Welcome Section */}
         <div className="welcome-section flex flex-col justify-center items-center bg-gradient-to-b from-blue-600 to-blue-400 w-full md:w-1/2 text-white p-8">
