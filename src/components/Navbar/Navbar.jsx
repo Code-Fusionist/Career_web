@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-gray-600 via-gray-800 to-gray-600 p-4 shadow-lg">
+    <nav className="bg-gradient-to-r from-gray-600 via-gray-800 to-gray-600 p-4 shadow-lg relative z-50">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-white md:hidden focus:outline-none"
+          className="text-white md:hidden focus:outline-none z-20"
         >
           <svg
             className="w-6 h-6"
@@ -37,31 +37,72 @@ const Navbar = () => {
         </button>
 
         {/* Navigation Links */}
-        <div className={`w-full ${isOpen ? 'block' : 'hidden'} md:flex md:items-center md:w-auto`}>
-          <ul className="flex flex-col md:flex-row items-center md:space-x-8 mt-4 md:mt-0 text-white">
-            <li>
-              <Link to="/" className="hover:text-gray-200 transition duration-300 ease-in-out">Home</Link>
+        <div
+          className={`fixed top-0 left-0 h-full w-3/4 bg-gray-900 text-white transform ${
+            isOpen ? 'translate-x-0' : '-translate-x-full'
+          } md:relative md:translate-x-0 md:w-auto md:bg-transparent transition-transform duration-300 ease-in-out z-40`}
+        >
+          <ul className="flex flex-col md:flex-row items-center md:space-x-8 pt-16 px-6 md:pt-0 md:px-0">
+            <li className="my-4 md:my-0">
+              <Link
+                to="/"
+                className="hover:text-gray-400 transition duration-300 ease-in-out text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
             </li>
-            <li>
-              <Link to="/test" className="hover:text-gray-200 transition duration-300 ease-in-out">Test</Link>
+            <li className="my-4 md:my-0">
+              <Link
+                to="/test"
+                className="hover:text-gray-400 transition duration-300 ease-in-out text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                Test
+              </Link>
             </li>
-            <li>
-              <Link to="/Model" className="hover:text-gray-200 transition duration-300 ease-in-out">Model</Link>
+            <li className="my-4 md:my-0">
+              <Link
+                to="/Model"
+                className="hover:text-gray-400 transition duration-300 ease-in-out text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                Model
+              </Link>
             </li>
-            <li>
-              <Link to="/report" className="hover:text-gray-200 transition duration-300 ease-in-out">Report</Link>
+            <li className="my-4 md:my-0">
+              <Link
+                to="/report"
+                className="hover:text-gray-400 transition duration-300 ease-in-out text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                Report
+              </Link>
             </li>
-            <li>
-              <Link to="/About" className="hover:text-gray-200 transition duration-300 ease-in-out">About</Link>
+            <li className="my-4 md:my-0">
+              <Link
+                to="/About"
+                className="hover:text-gray-400 transition duration-300 ease-in-out text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
             </li>
-            <li>
-              <Link to="/ContactForm" className="hover:text-gray-200 transition duration-300 ease-in-out">ContacUs</Link>
+            <li className="my-4 md:my-0">
+              <Link
+                to="/ContactForm"
+                className="hover:text-gray-400 transition duration-300 ease-in-out text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                ContactUs
+              </Link>
             </li>
             {/* Login/Signup Link */}
-            <li className="mt-4 md:mt-0">
+            <li className="mt-8 md:mt-0">
               <Link
                 to="/LoginForm" // Replace with actual login route
-                className="bg-blue-600 px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out"
+                className="bg-blue-600 px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out text-lg"
+                onClick={() => setIsOpen(false)}
               >
                 Login / Signup
               </Link>
@@ -69,6 +110,14 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      
+      {/* Overlay for when the menu is open on mobile */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black opacity-50 md:hidden z-30"
+          onClick={() => setIsOpen(false)}
+        ></div>
+      )}
     </nav>
   );
 };
