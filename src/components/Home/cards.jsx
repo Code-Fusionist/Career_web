@@ -5,18 +5,18 @@ import cimage from './cimage.webp'; // Import the image
 const services = [
   {
     image: cimage, // Use the imported image here
-    title: "Personalized Profile Assessment",
-    description: "We start by understanding your unique profile and requirements, so we can help find the best destination, course, and institution that match your eligibility, interests, and aspirations",
+    title: "Career Test",
+    description: "Our website offers a career assessment test designed to evaluate users' interests, skills, and aptitudes, providing insights to guide personalized career recommendations.",
   },
   {
     image: cimage, // Replace with your other image paths
-    title: "Applying to institutions",
-    description: "We handhold you through the entire application process from preparation to submission, including identifying scholarship opportunities for you",
+    title: "Career Report",
+    description: "After completing the test, users receive a detailed career report that highlights potential career paths and educational options based on their individual results.",
   },
   {
     image: cimage, // Replace with your other image paths
-    title: "Admission letter acceptance",
-    description: "Our expert help you evaluate your offers and make the right choice. We further guide you with essential services like tuition fee payments, accommodation, and more",
+    title: "Privacy and Security",
+    description: "We prioritize user privacy by implementing strict data protection measures to ensure that personal information and test results remain confidential and secure on our platform.",
   },
 ];
 
