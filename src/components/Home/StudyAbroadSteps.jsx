@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
+import image from './image.jpg';
 
 const StudyAbroadSteps = () => {
   useEffect(() => {
@@ -13,13 +14,14 @@ const StudyAbroadSteps = () => {
   }, []);
 
   const steps = [
-    { title: "Why study abroad?", link: "/why-study-abroad" },
-    { title: "Where and what to study?", link: "/where-what-to-study" },
-    { title: "How do I apply?", link: "/how-to-apply" },
-    { title: "After receiving an offer", link: "/after-offer" },
-    { title: "Prepare to depart", link: "/prepare-to-depart" },
-    { title: "Arrive and thrive", link: "/arrive-and-thrive" }
-  ];
+    { title: "What is EduNavigator?", link: "/what-is-edunavigator" },
+    { title: "Why should I use EduNavigator?", link: "/why-use-edunavigator" },
+    { title: "What kind of recommendations does EduNavigator provide?", link: "/types-of-recommendations" },
+    { title: "How does EduNavigator personalize recommendations?", link: "/personalize-recommendations" },
+    { title: "Is my data secure on EduNavigator?", link: "/data-security" },
+    { title: "Can EduNavigator help with competitive exams?", link: "/competitive-exams-help" },
+    { title: "Does it provide real-time information?", link: "/real-time-information" }
+];
 
   return (
     <div className="bg-gray-900 text-white p-6 md:p-12 flex flex-col md:flex-row items-center gap-8">
@@ -32,7 +34,7 @@ const StudyAbroadSteps = () => {
         
         {/* Main image */}
         <img 
-          src="https://via.placeholder.com/150" 
+          src= {image} 
           alt="Student" 
           className="relative z-10 w-48 h-64 object-cover rounded-lg shadow-lg"
         />
