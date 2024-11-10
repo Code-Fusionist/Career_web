@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import test from './test.jpg';
-import report from './report.jpg';
-import privacy from './report.jpg';
-import prediction from './prediction.jpg';
+import report from './Report.jpg';
+import privacy from './privacy.jpg'; // Corrected file name for clarity
+import prediction from './Prediction.jpg';
 
 const services = [
   {
@@ -19,7 +19,7 @@ const services = [
   {
     image: privacy,
     title: "Privacy and Security",
-    description: "We prioritize user privacy by implementing strict data protection measures to ensure that personal information and test results remain confidential and secure on our platform.",
+    description: "We prioritize user privacy by implementing strict data protection measures to ensure that personal information and test results remain confidential and secure on our platform.",
   },
   {
     image: prediction,
@@ -43,7 +43,7 @@ const Cards = () => {
 
   return (
     <div className="bg-gray-900 text-white py-12">
-      <h2 className="text-3xl font-bold text-center mb-8">Services</h2>
+      <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-12">
         {services.map((service, index) => (
           <div
@@ -54,12 +54,12 @@ const Cards = () => {
             <div className="mb-4">
               <img
                 src={service.image} // This will now correctly use the imported image
-                alt={service.title}
-                className="w-full h-48 object-cover rounded-lg items-center"
+                alt={service.title} // Ensure alt text is descriptive for accessibility
+                className="w-full h-48 object-cover rounded-lg"
               />
             </div>
-            <h3 className="text-xl font-bold text-gray-600 mb-2">{service.title}</h3> {/* Change text color for title */}
-            <p className="text-gray-700 mb-4">{service.description}</p> {/* Change text color for description */}
+            <h3 className="text-xl font-bold text-gray-600 mb-2">{service.title}</h3> {/* Title styling */}
+            <p className="text-gray-700 mb-4">{service.description}</p> {/* Description styling */}
             <a href="#" className="text-blue-500 hover:underline">
               Learn More &rarr;
             </a>
