@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "question": "When faced with a challenging problem, what is your usual approach?",
+    "options": [
+      { "text": "I analyze all angles and plan a step-by-step solution.", "value": "analytical" },
+      { "text": "I brainstorm multiple creative ideas to tackle it.", "value": "creativity" },
+      { "text": "I consult others to gather a range of perspectives.", "value": "collaboration" }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "How comfortable are you with collaborating in a team?",
+    "options": [
+      { "text": "I enjoy sharing ideas and motivating others.", "value": "leadership" },
+      { "text": "I prefer working alone but can collaborate when needed.", "value": "independence" },
+      { "text": "I thrive in collaborative environments and enjoy group success.", "value": "collaboration" }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "How do you learn best?",
+    "options": [
+      { "text": "Through hands-on experience and practice.", "value": "practical" },
+      { "text": "By reading and researching.", "value": "analytical" },
+      { "text": "By discussing ideas with others.", "value": "collaboration" }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "How would you describe your attention to detail?",
+    "options": [
+      { "text": "I pay close attention to every small detail.", "value": "attention_to_detail" },
+      { "text": "I focus on the bigger picture rather than every detail.", "value": "big_picture" },
+      { "text": "I try to balance both detail and overall objectives.", "value": "balanced" }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "How do you feel about giving presentations or speeches?",
+    "options": [
+      { "text": "I feel confident and enjoy engaging the audience.", "value": "public_speaking" },
+      { "text": "I feel nervous but can manage.", "value": "adaptable" },
+      { "text": "I avoid public speaking if possible.", "value": "introverted" }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "When learning new technology, how do you usually react?",
+    "options": [
+      { "text": "I’m excited to learn and adapt quickly.", "value": "technology_adaptable" },
+      { "text": "I find it challenging but try my best to keep up.", "value": "resilient" },
+      { "text": "I prefer tasks that don’t involve much technology.", "value": "non_technical" }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "How often do you come up with original ideas or new ways to do things?",
+    "options": [
+      { "text": "Regularly, I enjoy exploring creative solutions.", "value": "creativity" },
+      { "text": "Occasionally, when required.", "value": "practical" },
+      { "text": "Rarely, I stick to tried-and-true methods.", "value": "traditional" }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Do you prefer structured or flexible work environments?",
+    "options": [
+      { "text": "I prefer structure and clear guidelines.", "value": "structured" },
+      { "text": "I enjoy a balance of structure and flexibility.", "value": "balanced" },
+      { "text": "I prefer flexibility to explore and create freely.", "value": "flexible" }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "How good are you at managing your emotions under stress?",
+    "options": [
+      { "text": "I stay calm and think logically.", "value": "stress_management" },
+      { "text": "I may feel stressed but can manage it.", "value": "resilient" },
+      { "text": "I find it hard to control my emotions under pressure.", "value": "emotional" }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "When presented with data or reports, how do you react?",
+    "options": [
+      { "text": "I dive in and analyze details carefully.", "value": "analytical" },
+      { "text": "I skim for main points but avoid detailed analysis.", "value": "big_picture" },
+      { "text": "I feel overwhelmed and would rather someone else handle it.", "value": "non_analytical" }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "How do you feel about leading a team?",
+    "options": [
+      { "text": "I enjoy leading and inspiring others.", "value": "leadership" },
+      { "text": "I can lead if needed but don’t seek it.", "value": "adaptable" },
+      { "text": "I prefer to be a supportive team member rather than a leader.", "value": "supportive" }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "How do you handle unexpected changes in your work?",
+    "options": [
+      { "text": "I adjust quickly and find new solutions.", "value": "adaptable" },
+      { "text": "I may struggle initially but adapt over time.", "value": "resilient" },
+      { "text": "I prefer routines and struggle with changes.", "value": "structured" }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "How often do you make plans before starting a project?",
+    "options": [
+      { "text": "Always, planning helps me stay organized.", "value": "organized" },
+      { "text": "Sometimes, if the project is complex.", "value": "balanced" },
+      { "text": "Rarely, I prefer to dive in and figure it out as I go.", "value": "flexible" }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "How motivated are you to set and achieve goals?",
+    "options": [
+      { "text": "Very motivated, I set and work toward goals regularly.", "value": "goal_oriented" },
+      { "text": "Somewhat motivated, I set goals occasionally.", "value": "moderate_motivation" },
+      { "text": "Not very motivated, I focus on day-to-day tasks instead.", "value": "routine_oriented" }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "When working on projects, how often do you try to innovate or improve processes?",
+    "options": [
+      { "text": "I regularly look for ways to innovate.", "value": "innovation" },
+      { "text": "Sometimes, if it’s practical.", "value": "practical" },
+      { "text": "Rarely, I stick to the usual methods.", "value": "traditional" }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "How do you handle difficult or dissatisfied customers?",
+    "options": [
+      { "text": "I stay calm and try to resolve the issue positively.", "value": "customer_service" },
+      { "text": "I feel frustrated but try to remain professional.", "value": "resilient" },
+      { "text": "I avoid customer interaction when possible.", "value": "introverted" }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "How do you prefer to approach a new project?",
+    "options": [
+      { "text": "With a clear plan and organized steps.", "value": "structured" },
+      { "text": "By exploring different ideas and seeing what works.", "value": "creative" },
+      { "text": "I prefer to jump in and adapt along the way.", "value": "flexible" }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Do you enjoy taking risks in your work?",
+    "options": [
+      { "text": "Yes, I am open to experimenting with new methods.", "value": "risk_taker" },
+      { "text": "Sometimes, but only if the potential reward is worth it.", "value": "calculated_risk" },
+      { "text": "No, I prefer safer and more predictable outcomes.", "value": "cautious" }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "How do you prioritize your work?",
+    "options": [
+      { "text": "I assess the urgency and importance of each task.", "value": "organized" },
+      { "text": "I tackle the tasks that interest me most first.", "value": "interest_driven" },
+      { "text": "I prefer a mix of both urgent and important tasks.", "value": "balanced" }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "When facing a tight deadline, how do you perform?",
+    "options": [
+      { "text": "I work well under pressure and focus even more.", "value": "stress_resilient" },
+      { "text": "I feel the pressure but manage to meet deadlines.", "value": "balanced" },
+      { "text": "I find it difficult to perform well under stress.", "value": "stress_sensitive" }
+    ]
+  },
+  {
+    "id": 21,
+    "question": "How do you feel about working in a highly competitive environment?",
+    "options": [
+      { "text": "I thrive in competition and push myself harder.", "value": "competitive" },
+      { "text": "I manage well but prefer collaboration over competition.", "value": "balanced" },
+      { "text": "I prefer a more cooperative and less competitive environment.", "value": "cooperative" }
+    ]
+  },
+  {
+    "id": 22,
+    "question": "How do you usually solve problems that require a technical solution?",
+    "options": [
+      { "text": "I enjoy diving into the technical details and figuring it out.", "value": "technical" },
+      { "text": "I prefer to rely on others who have more technical expertise.", "value": "collaborative" },
+      { "text": "I avoid technical problems whenever possible.", "value": "non_technical" }
+    ]
+  },
+  {
+    "id": 23,
+    "question": "How important is job stability to you?",
+    "options": [
+      { "text": "Very important, I value long-term security.", "value": "stability_oriented" },
+      { "text": "Somewhat important, but I’m open to change if the opportunity is right.", "value": "flexible" },
+      { "text": "Not very important, I’m willing to take risks for growth.", "value": "growth_oriented" }
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Do you prefer working with data or people?",
+    "options": [
+      { "text": "I prefer working with data and numbers.", "value": "data_oriented" },
+      { "text": "I enjoy working with people and building relationships.", "value": "people_oriented" },
+      { "text": "I enjoy both, depending on the project.", "value": "balanced" }
+    ]
+  },
+  {
+    "id": 25,
+    "question": "How do you typically handle constructive criticism?",
+    "options": [
+      { "text": "I welcome it and use it to improve.", "value": "open_to_feedback" },
+      { "text": "I take it personally but eventually use it for growth.", "value": "sensitive" },
+      { "text": "I find it difficult to accept and may resist it.", "value": "resistant_to_feedback" }
+    ]
+  },
+  {
+    "id": 26,
+    "question": "Do you prefer working in a fast-paced or slower-paced environment?",
+    "options": [
+      { "text": "Fast-paced, I thrive under pressure and quick decisions.", "value": "fast_paced" },
+      { "text": "Slower-paced, I appreciate time for careful thought and analysis.", "value": "deliberate" },
+      { "text": "I adapt to the pace depending on the situation.", "value": "adaptable" }
+    ]
+  },
+  {
+    "id": 27,
+    "question": "How would you describe your decision-making style?",
+    "options": [
+      { "text": "I analyze all facts before making a decision.", "value": "analytical" },
+      { "text": "I trust my instincts and go with my gut feeling.", "value": "intuitive" },
+      { "text": "I seek input from others before deciding.", "value": "collaborative" }
+    ]
+  },
+  {
+    "id": 28,
+    "question": "How do you feel about repetitive tasks?",
+    "options": [
+      { "text": "I prefer routine and enjoy mastering repetitive tasks.", "value": "detail_oriented" },
+      { "text": "I find them boring and look for variety.", "value": "variety_seeking" },
+      { "text": "I do them when necessary, but I seek new challenges.", "value": "challenge_oriented" }
+    ]
+  },
+  {
+    "id": 29,
+    "question": "When faced with a project you have little experience with, how do you react?",
+    "options": [
+      { "text": "I research and learn quickly to overcome challenges.", "value": "self_starter" },
+      { "text": "I prefer to collaborate with experts in the field.", "value": "collaborative" },
+      { "text": "I find it difficult but do my best to push through.", "value": "adaptable" }
+    ]
+  },
+  {
+    "id": 30,
+    "question": "How do you feel about working under tight deadlines?",
+    "options": [
+      { "text": "I excel under pressure and thrive with deadlines.", "value": "deadline_oriented" },
+      { "text": "I prefer working at a comfortable pace but can manage deadlines.", "value": "balanced" },
+      { "text": "I find tight deadlines stressful and prefer more flexibility.", "value": "stress_sensitive" }
+    ]
+  },
+  {
+    "id": 31,
+    "question": "How do you prefer to receive feedback from supervisors?",
+    "options": [
+      { "text": "In a detailed, constructive manner with clear examples.", "value": "clear_feedback" },
+      { "text": "Quick and to the point, without too much explanation.", "value": "brief_feedback" },
+      { "text": "Through regular check-ins and continuous conversations.", "value": "frequent_feedback" }
+    ]
+  },
+  {
+    "id": 32,
+    "question": "How comfortable are you with delegating tasks to others?",
+    "options": [
+      { "text": "Very comfortable, I trust others to get the job done.", "value": "delegator" },
+      { "text": "I delegate when necessary but prefer to handle tasks myself.", "value": "independent" },
+      { "text": "I struggle to delegate and prefer to do things myself.", "value": "control_freak" }
+    ]
+  },
+  {
+    "id": 33,
+    "question": "How do you feel about taking on leadership responsibilities?",
+    "options": [
+      { "text": "I enjoy leading teams and guiding others to success.", "value": "leadership" },
+      { "text": "I take on leadership roles when necessary but prefer other responsibilities.", "value": "supportive" },
+      { "text": "I prefer not to take leadership roles and focus on individual tasks.", "value": "non_leader" }
+    ]
+  },
+  {
+    "id": 34,
+    "question": "How do you usually organize your work tasks?",
+    "options": [
+      { "text": "I make detailed lists and prioritize tasks.", "value": "organized" },
+      { "text": "I work on whatever seems most urgent at the moment.", "value": "spontaneous" },
+      { "text": "I try to juggle multiple tasks at once.", "value": "multi_tasker" }
+    ]
+  },
+  {
+    "id": 35,
+    "question": "How often do you try to improve your skills?",
+    "options": [
+      { "text": "Regularly, I’m always looking for ways to grow and learn.", "value": "growth_minded" },
+      { "text": "Occasionally, when I feel it’s necessary.", "value": "occasionally_minded" },
+      { "text": "I prefer to stick to what I know and only improve when necessary.", "value": "comfort_zone" }
+    ]
+  },
+  {
+    "id": 36,
+    "question": "How do you feel about working in a role that requires constant change?",
+    "options": [
+      { "text": "I enjoy dynamic roles and fast-paced environments.", "value": "change_embracer" },
+      { "text": "I’m okay with change but prefer stability in my work.", "value": "balanced" },
+      { "text": "I prefer roles with minimal change and routine tasks.", "value": "routine_oriented" }
+    ]
+  },
+  {
+    "id": 37,
+    "question": "How do you feel about working with cutting-edge technology?",
+    "options": [
+      { "text": "I enjoy exploring new technologies and trends.", "value": "technology_enthusiast" },
+      { "text": "I’m open to using technology but don’t actively seek out new trends.", "value": "pragmatic" },
+      { "text": "I prefer traditional methods and avoid unnecessary tech changes.", "value": "traditional" }
+    ]
+  },
+  {
+    "id": 38,
+    "question": "How do you approach unfamiliar tasks at work?",
+    "options": [
+      { "text": "I dive in and try to figure it out on my own.", "value": "self_starter" },
+      { "text": "I research and ask for help from others when needed.", "value": "collaborative" },
+      { "text": "I feel stressed and try to avoid unfamiliar tasks when possible.", "value": "avoidant" }
+    ]
+  },
+  {
+    "id": 39,
+    "question": "How do you prefer to work: independently or as part of a team?",
+    "options": [
+      { "text": "I prefer to work independently and take full responsibility.", "value": "independent" },
+      { "text": "I enjoy collaborating and working as part of a team.", "value": "team_player" },
+      { "text": "I’m comfortable with both, depending on the situation.", "value": "flexible" }
+    ]
+  },
+  {
+    "id": 40,
+    "question": "How do you handle ambiguity in the workplace?",
+    "options": [
+      { "text": "I thrive in ambiguous situations and enjoy figuring things out.", "value": "comfortable_with_ambiguity" },
+      { "text": "I prefer clear guidance but can manage without it.", "value": "balanced" },
+      { "text": "I find ambiguity stressful and prefer more structure.", "value": "structure_seeker" }
+    ]
+  }
+]
