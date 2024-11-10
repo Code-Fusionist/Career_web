@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
-import image from './image.jpg';
+import image from './desk2.png';
 
 const StudyAbroadSteps = () => {
   useEffect(() => {
