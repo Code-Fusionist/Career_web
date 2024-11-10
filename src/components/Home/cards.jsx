@@ -1,22 +1,30 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import cimage from './cimage.webp'; // Import the image
+import test from './test.jpg';
+import report from './report.jpg';
+import privacy from './report.jpg';
+import prediction from './prediction.jpg';
 
 const services = [
   {
-    image: cimage, // Use the imported image here
+    image: test, // Use the imported image here
     title: "Career Test",
     description: "Our website offers a career assessment test designed to evaluate users' interests, skills, and aptitudes, providing insights to guide personalized career recommendations.",
   },
   {
-    image: cimage, // Replace with your other image paths
+    image: report, // Replace with your other image paths
     title: "Career Report",
     description: "After completing the test, users receive a detailed career report that highlights potential career paths and educational options based on their individual results.",
   },
   {
-    image: cimage, // Replace with your other image paths
+    image: privacy,
     title: "Privacy and Security",
     description: "We prioritize user privacy by implementing strict data protection measures to ensure that personal information and test results remain confidential and secure on our platform.",
+  },
+  {
+    image: prediction,
+    title: "Prediction Accuracy",
+    description: "EduNavigator uses advanced data analytics and machine learning to provide accurate recommendations for colleges, career paths, and competitive exams, helping students make informed decisions.",
   },
 ];
 
@@ -36,7 +44,7 @@ const Cards = () => {
   return (
     <div className="bg-gray-900 text-white py-12">
       <h2 className="text-3xl font-bold text-center mb-8">Services</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-12">
         {services.map((service, index) => (
           <div
             key={index}
