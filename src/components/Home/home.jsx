@@ -6,12 +6,13 @@ import Services from './Services';
 import Footer from './Foooter';
 import Cards from './cards';
 
+// Import images from the local assets directory
+import slide1 from './career.jpg';
+import slide2 from './Equal.jpg';
+import slide3 from './Success.jpg';
+
 function Home() {
-  const slides = [
-    "https://mdbcdn.b-cdn.net/img/new/slides/041.webp",
-    "https://mdbcdn.b-cdn.net/img/new/slides/042.webp",
-    "https://mdbcdn.b-cdn.net/img/new/slides/043.webp",
-  ];
+  const slides = [slide1, slide2, slide3];
 
   return (
     <div className="App bg-black text-white">
