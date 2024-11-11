@@ -1,8 +1,8 @@
+// model.jsx
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Foooter from "../Home/Foooter";
 import "./model.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const CollegePredictionForm = () => {
   const [rank, setRank] = useState("");
@@ -12,47 +12,25 @@ const CollegePredictionForm = () => {
   const [colleges, setColleges] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [pageLoaded, setPageLoaded] = useState(false);  // State for page load animation
+  const [pageLoaded, setPageLoaded] = useState(false); // State for page load animation
 
   useEffect(() => {
     // Trigger page load animation
     setPageLoaded(true);
   }, []);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
     setError("");
 
-    const data = {
-      rank,
-      category,
-      shift,
-      round_num: roundNum,
-    };
-
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      const response = await fetch("http://127.0.0.1:5000/predict", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (!response.ok) {
-        const errMessage = await response.text();
-        throw new Error(errMessage || "Failed to fetch data");
-      }
-
-      const result = await response.json();
-      setColleges(result.colleges);
-    } catch (err) {
-      setError(`Error: ${err.message}`);
-    } finally {
+    // Mock data for testing UI without server connection
+    const mockColleges = ["College A", "College B", "College C"];
+    
+    setTimeout(() => {
+      setColleges(mockColleges);
       setLoading(false);
-    }
+    }, 2000);
   };
 
   return (
@@ -83,7 +61,7 @@ const CollegePredictionForm = () => {
           onSubmit={handleSubmit}
           className="shadow-lg p-4 bg-light rounded"
           style={{
-            backgroundColor: "#ffffff", // Form background
+            backgroundColor: "#ffffff",
             borderRadius: "15px",
             boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
           }}
