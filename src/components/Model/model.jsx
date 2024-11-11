@@ -1,6 +1,5 @@
 // model.jsx
 import React, { useState, useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Foooter from "../Home/Foooter";
 import "./model.css";
 
