@@ -19,7 +19,7 @@ const teamMembers = [
   {
     name: 'Bhavya Munjal',
     course: 'Machine Learning',
-    description: '“Applying AI techniques to solve complex problems and drive technological advancements.”',
+    description: '“Applying ML techniques to solve complex problems and drive technological advancements.”',
     icon: bhavya,
   },  
 ];
