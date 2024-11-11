@@ -52,7 +52,7 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className="my-4 md:my-0">
+            {/* <li className="my-4 md:my-0">
               <Link
                 to="/test"
                 className="hover:text-gray-400 transition duration-300 ease-in-out text-lg"
@@ -60,7 +60,7 @@ const Navbar = () => {
               >
                 Test
               </Link>
-            </li>
+            </li> */}
             <li className="my-4 md:my-0">
               <Link
                 to="/Model"
