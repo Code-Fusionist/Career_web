@@ -11,10 +11,9 @@ const CollegePredictionForm = () => {
   const [colleges, setColleges] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [pageLoaded, setPageLoaded] = useState(false); // State for page load animation
+  const [pageLoaded, setPageLoaded] = useState(false);
 
   useEffect(() => {
-    // Trigger page load animation
     setPageLoaded(true);
   }, []);
 
@@ -23,7 +22,6 @@ const CollegePredictionForm = () => {
     setLoading(true);
     setError("");
 
-    // Mock data for testing UI without server connection
     const mockColleges = ["College A", "College B", "College C"];
     
     setTimeout(() => {
@@ -39,34 +37,33 @@ const CollegePredictionForm = () => {
         style={{
           transition: "opacity 1.5s ease-in-out",
           opacity: pageLoaded ? 1 : 0,
-          backgroundColor: "#f0f8ff", // Light background color for the page
-          borderRadius: "10px",
-          padding: "20px",
+          backgroundColor: "#f4f9ff",
+          borderRadius: "12px",
+          padding: "30px",
+          boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
         }}
       >
         <h1
-          className="text-center mb-4"
+          className="text-center mb-5"
           style={{
-            color: "#007bff",
-            fontWeight: "bold",
-            fontSize: "2.5rem",
-            letterSpacing: "1px",
-            textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)",
+            color: "#0056b3",
+            fontWeight: "700",
+            fontSize: "2.8rem",
+            letterSpacing: "1.2px",
           }}
         >
           College Prediction
         </h1>
         <form
           onSubmit={handleSubmit}
-          className="shadow-lg p-4 bg-light rounded"
+          className="shadow-sm p-5 bg-white rounded"
           style={{
-            backgroundColor: "#ffffff",
-            borderRadius: "15px",
-            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+            borderRadius: "12px",
+            boxShadow: "0 6px 18px rgba(0, 0, 0, 0.06)",
           }}
         >
-          <div className="mb-3">
-            <label className="form-label">Rank:</label>
+          <div className="mb-4">
+            <label className="form-label" style={{ fontWeight: "600", color: "#555" }}>Rank:</label>
             <input
               type="number"
               className="form-control"
@@ -74,57 +71,57 @@ const CollegePredictionForm = () => {
               onChange={(e) => setRank(e.target.value)}
               required
               style={{
-                borderRadius: "5px",
-                borderColor: "#007bff",
-                boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                borderRadius: "8px",
+                border: "1px solid #ced4da",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
               }}
             />
           </div>
-          <div className="mb-3">
-            <label className="form-label">Category:</label>
+          <div className="mb-4">
+            <label className="form-label" style={{ fontWeight: "600", color: "#555" }}>Category:</label>
             <select
               className="form-select"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
               required
               style={{
-                borderRadius: "5px",
-                borderColor: "#007bff",
-                boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                borderRadius: "8px",
+                border: "1px solid #ced4da",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
               }}
             >
               <option value="OPNOOS">Delhi</option>
               <option value="OPNOHS">Outside Delhi</option>
             </select>
           </div>
-          <div className="mb-3">
-            <label className="form-label">Shift:</label>
+          <div className="mb-4">
+            <label className="form-label" style={{ fontWeight: "600", color: "#555" }}>Shift:</label>
             <select
               className="form-select"
               value={shift}
               onChange={(e) => setShift(e.target.value)}
               required
               style={{
-                borderRadius: "5px",
-                borderColor: "#007bff",
-                boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                borderRadius: "8px",
+                border: "1px solid #ced4da",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
               }}
             >
               <option value="Morning">Morning</option>
               <option value="Evening">Evening</option>
             </select>
           </div>
-          <div className="mb-3">
-            <label className="form-label">Round Number</label>
+          <div className="mb-4">
+            <label className="form-label" style={{ fontWeight: "600", color: "#555" }}>Round Number</label>
             <select
               className="form-select"
               value={roundNum}
               onChange={(e) => setRoundNum(e.target.value)}
               required
               style={{
-                borderRadius: "5px",
-                borderColor: "#007bff",
-                boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+                borderRadius: "8px",
+                border: "1px solid #ced4da",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
               }}
             >
               <option value="1">1</option>
@@ -132,21 +129,22 @@ const CollegePredictionForm = () => {
               <option value="3">3</option>
             </select>
           </div>
-          <div className="d-flex justify-content-center">
+          <div className="text-center">
             <button
               type="submit"
               disabled={loading}
               className="btn btn-primary"
               style={{
                 backgroundColor: "#007bff",
-                borderColor: "#0056b3",
-                borderRadius: "50px",
-                padding: "10px 30px",
-                fontSize: "1.1rem",
-                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                border: "none",
+                borderRadius: "25px",
+                padding: "12px 36px",
+                fontSize: "1rem",
+                fontWeight: "600",
+                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
               }}
             >
-              Get Predictions
+              {loading ? "Processing..." : "Get Predictions"}
             </button>
           </div>
         </form>
@@ -154,7 +152,7 @@ const CollegePredictionForm = () => {
         {error && <div className="alert alert-danger mt-4">{error}</div>}
 
         {loading && (
-          <div className="text-center mt-10 mb-10">
+          <div className="text-center mt-5">
             <div className="spinner-border text-primary" role="status">
               <span className="visually-hidden">Loading...</span>
             </div>
@@ -162,10 +160,10 @@ const CollegePredictionForm = () => {
         )}
 
         {colleges.length > 0 && (
-          <div className="mt-10 mb-24">
+          <div className="mt-5 mb-5">
             <h2
               className="text-center mb-4"
-              style={{ color: "#007bff", fontWeight: "bold" }}
+              style={{ color: "#0056b3", fontWeight: "700" }}
             >
               Recommended Colleges
             </h2>
@@ -176,29 +174,28 @@ const CollegePredictionForm = () => {
                   className="list-group-item d-flex align-items-center animate__animated animate__fadeInUp"
                   style={{
                     animationDelay: `${index * 0.1}s`,
-                    backgroundColor: "#e9f7ff",
+                    backgroundColor: "#f0f8ff",
                     color: "#0056b3",
                     borderRadius: "8px",
                     border: "1px solid #007bff",
                     marginBottom: "10px",
+                    padding: "12px 20px",
                     transition: "transform 0.3s, background-color 0.3s",
                     cursor: "pointer",
-                    fontSize: "1.1rem",
-                    padding: "10px",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "scale(1.05)";
-                    e.currentTarget.style.backgroundColor = "#d4e9ff";
+                    e.currentTarget.style.transform = "scale(1.03)";
+                    e.currentTarget.style.backgroundColor = "#e3f1ff";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.transform = "scale(1)";
-                    e.currentTarget.style.backgroundColor = "#e9f7ff";
+                    e.currentTarget.style.backgroundColor = "#f0f8ff";
                   }}
                 >
-                  <strong className="mr-2" style={{ color: "#007bff" }}>
+                  <strong style={{ marginRight: "8px", color: "#007bff" }}>
                     {index + 1}.
                   </strong>
-                  <span>{college}</span>
+                  {college}
                 </li>
               ))}
             </ul>
