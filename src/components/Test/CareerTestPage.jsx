@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Parallax } from "react-parallax";
 import HeroImage from "./test.jpg";
 
 function CareerTestPage() {
@@ -20,11 +19,13 @@ function CareerTestPage() {
 
   return (
     <div className="bg-gray-900 text-white font-sans">
-      {/* Hero Section with Parallax */}
-      <Parallax
-        bgImage={HeroImage}
-        strength={200}
+      {/* Hero Section with Custom Parallax Effect */}
+      <div
         className="text-center py-16 bg-cover bg-center relative"
+        style={{
+          backgroundImage: `url(${HeroImage})`,
+          transform: `translateY(${scrollY * 0.3}px)`, // Adjust parallax effect speed here
+        }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="container mx-auto px-6 relative z-10">
@@ -53,7 +54,7 @@ function CareerTestPage() {
             Start Your Career Test Now
           </motion.button>
         </div>
-      </Parallax>
+      </div>
 
       {/* About the Career Test Section */}
       <section className="py-16 bg-gray-900">
@@ -187,7 +188,7 @@ function CareerTestPage() {
             Your Privacy Matters
           </motion.h2>
           <p className="mt-4 text-lg text-gray-300">
-            We value your privacy. All information shared in the test will remain confidential and will only be used for generating your personalized results.
+            We value your privacy. All your responses are strictly confidential and used solely for generating your personalized career report.
           </p>
         </div>
       </section>
