@@ -187,7 +187,7 @@ function CareerTestPage() {
             Your Privacy Matters
           </motion.h2>
           <p className="mt-4 text-lg text-gray-300">
-            We value your privacy. All your responses are strictly confidential and used solely for generating your personalized career report.
+            We value your privacy. All information shared in the test will remain confidential and will only be used for generating your personalized results.
           </p>
         </div>
       </section>
